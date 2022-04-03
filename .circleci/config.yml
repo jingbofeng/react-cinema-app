@@ -35,7 +35,7 @@ jobs:
       - checkout
       - run:
           name: Show current branch
-          command: echo ${{CURRENT_BRANCH}}
+          command: echo ${CURRENT_BRANCH}
       - run:
           name: Installing AWS CLI
           working_directory: /
@@ -72,7 +72,7 @@ jobs:
       - checkout
       - run:
           name: Show current branch
-          command: echo ${{CURRENT_BRANCH}}
+          command: echo ${CURRENT_BRANCH}
       - run:
           name: Installing AWS CLI
           working_directory: /
